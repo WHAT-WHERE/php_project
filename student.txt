@@ -1,0 +1,12 @@
+Murli : password123 : murli@example.com
+mayank : password456 : mayank@example.com
+vm : password789 : vm@example.com
+moksh : password101 : moksh@example.com
+adi : password213 : adi@example.com
+sid : password201 : sid@example.com
+kushank  : password564 : khushank@example.com
+chirag : password182 : chirag@example.com
+hemant : password713 : hemant@example.com
+takshu : password4965 : takshu@example.com
+ankit : password256 : ankit@example.com
+vinit : password236 : vinit@example.com

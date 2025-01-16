@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CONTACT US - KAVYASHALA</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <style>
+      .location {
+  width: 80%;
+  margin: auto;
+  padding: 80px 0;
+}
+.location iframe {
+  width: 100%;
+}
+.contact-us{
+  width: 80%;
+  margin: auto;
+}
+.contact-col{
+  flex-basis: 48%;
+  margin-bottom: 30px;
+}
+    </style>   <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="./images/KAVYASHALA-3.png" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+            
+            <li><a href="./blog.html">BLOG</a></li>
+            <li><a href="./contact.html">CONTACT</a></li>
+            <li><a href="./login.html">LOGIN</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Contact Us</h1>
+    </section>
+
+
+
+    <!--------contact us--------->
+    
+
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa-solid fa-house"></i>
+            <span>
+            <h5>BPIT , Rohini sec-17</h5>
+            <p>New Delhi - 110089</p>
+          </span>
+          </div>
+          <div>
+            <i class="fa-solid fa-phone"></i>
+            <span>
+            <h5>+91 XXXXXXXXXX</h5>
+            <p>Monday to Saturday, 10AM to 6PM</p>
+          </span>
+          </div>
+          <div>
+            <i class="fa-solid fa-envelope"></i>
+            <span>
+            <h5 style="font-size: 20px;
+            margin-bottom: 5px;
+            color: #555;
+            font-weight: 400;">kavyashala@mail.com</h5>
+            <p>Email us </p>
+          </span>
+          </div>
+        </div>
+        <div class="contact-col">
+          <form id="contactForm">
+              <input type="text" name="name" placeholder="Enter Your Name" required><br>
+              <input type="email" name="email" placeholder="Enter Email" required><br>
+              <input type="text" name="mobile" placeholder="Enter Mobile No" required><br>
+              <button type="button" class="hero-btn red-btn" onclick="submitForm()">Send Message</button>
+          </form>
+          <div id="displayInfo" style="display: none;">
+              <h2>Submitted Information</h2>
+              <input id="infoDisplay" type="text" readonly>
+          </div>
+      </div>       
+      <script>
+        function submitForm() {
+            // Get form elements
+            const name = document.querySelector('input[name="name"]').value;
+            const email = document.querySelector('input[name="email"]').value;
+            const mobile = document.querySelector('input[name="mobile"]').value;
+    
+            // Validate form inputs
+            if (!name || !email || !mobile) {
+                alert("All fields are required!");
+                return;
+            }
+    
+            // Combine the information
+            const combinedInfo = `Name: ${name}, Email: ${email}, Mobile: ${mobile}`;
+    
+            // Display the information
+            const displayInfoDiv = document.getElementById('displayInfo');
+            const infoDisplayInput = document.getElementById('infoDisplay');
+    
+            infoDisplayInput.value = combinedInfo;
+            displayInfoDiv.style.display = 'block';
+        }
+    </script>
+  </body>
+</html>

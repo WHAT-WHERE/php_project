@@ -1,0 +1,41 @@
+<?xml-stylesheet type="text/css" href="student_records.css"?>
+<!DOCTYPE HTML>
+<html>
+<head>
+    <h1> STUDENTS DESCRIPTION </h1>
+</head>
+<students>
+    <student>
+        <USN>USN : 49</USN>
+        <name>NAME : Murli</name>
+        <college>COLLEGE :  BPIT</college>
+        <branch>BRANCH : Computer Science and Engineering</branch>
+        <year>YEAR : 2021</year>
+        <e-mail>E-Mail : abc@gmail.com</e-mail>
+    </student>
+    <student>
+        <USN>USN :  50</USN>
+        <name>NAME : Mayank</name>
+        <college>COLLEGE :  BPIT</college>
+        <branch>BRANCH : Computer Science and Engineering</branch>
+        <year>YEAR : 2021</year>
+        <e-mail>E-Mail : xyz@gmail.com</e-mail>
+    </student>
+    <student>
+        <USN>USN :  51</USN>
+        <name>NAME : VM</name>
+        <college>COLLEGE :  BPIT</college>
+        <branch>BRANCH : Computer Science and Engineering</branch>
+        <year>YEAR : 2021</year>
+        <e-mail>E-Mail : pqr@gmail.com</e-mail>
+    </student>
+    <student>
+        <USN>USN :  52</USN>
+        <name>NAME : Moksh</name>
+        <college>COLLEGE :  BPIT</college>
+        <branch>BRANCH : Computer Science and Engineering</branch>
+        <year>YEAR : 2021</year>
+        <e-mail>E-Mail : mno@gmail.com</e-mail>
+    </student>
+</students>
+</html>
